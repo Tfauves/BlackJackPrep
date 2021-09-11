@@ -15,21 +15,13 @@ public class Deck {
                 this.cards.add(new Card(values, suits));
             }
         }
-
         Collections.shuffle(this.cards);
     }
 
     public void deal(List<Card> deck) {
-//        for (Card card : cards) {
-//            System.out.println(card.faceValue + " " + card.suit);
-//        }
-//
         for (int i = 0; i < 5; i++) {
             System.out.println(cards.get(i).faceValue + " " + cards.get(i).suit);
         }
     }
-
-
-
 
 }
