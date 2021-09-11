@@ -10,17 +10,22 @@ public class Deck {
     public String[] suit = {"Diamond", "Spade", "Club", "Heart"};
 
     public Deck() {
-        for (int i = 0; i < faceValue.length; i++) {
-            for (int j = 0; j < suit.length; j++ ) {
-                this.cards.add(new Card(faceValue[i], suit[j]));
+        for (String values : faceValue) {
+            for (String suits : suit) {
+                this.cards.add(new Card(values, suits));
             }
         }
+
         Collections.shuffle(this.cards);
     }
 
     public void deal(List<Card> deck) {
-        for (Card card : cards) {
-            System.out.println(card.faceValue + " " + card.suit);
+//        for (Card card : cards) {
+//            System.out.println(card.faceValue + " " + card.suit);
+//        }
+//
+        for (int i = 0; i < 5; i++) {
+            System.out.println(cards.get(i).faceValue + " " + cards.get(i).suit);
         }
     }
 
