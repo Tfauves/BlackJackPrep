@@ -5,10 +5,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-
         Deck playingCards = new Deck();
-        playingCards.deal(playingCards.cards);
+        playingCards.deal(playingCards.getCards());
     }
-
 
 }
