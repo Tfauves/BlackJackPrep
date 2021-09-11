@@ -20,7 +20,7 @@ public class Deck {
 
     public void deal(List<Card> deck) {
         for (int i = 0; i < 5; i++) {
-            System.out.println(cards.get(i).faceValue + " " + cards.get(i).suit);
+            System.out.println(cards.get(i).getFaceValue()+ " " + cards.get(i).getSuit());
         }
     }
 
