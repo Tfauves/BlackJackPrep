@@ -1,10 +1,10 @@
 package com.company;
 
 public class Card {
-    private int faceValue;
-    private String suit;
+    public String faceValue;
+    public String suit;
 
-    public Card(int faceValue, String suit) {
+    public Card(String faceValue, String suit) {
         this.faceValue = faceValue;
         this.suit = suit;
     }
