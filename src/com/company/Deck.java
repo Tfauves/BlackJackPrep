@@ -13,19 +13,16 @@ public class Deck {
     public Deck() {
         for (String values : faceValue) {
             for (String suits : suit) {
-                this.cards.add(new Card(values, suits));
+                cards.add(new Card(values, suits));
             }
         }
-        Collections.shuffle(this.cards);
+        Collections.shuffle(cards);
     }
 
-    public void deal(List<Card> deck) {
+    public void deal() {
         for (int i = 0; i < 5; i++) {
             System.out.println(cards.get(i).getFaceValue()+ " " + cards.get(i).getSuit());
         }
     }
 
-    public List<Card> getCards() {
-        return cards;
-    }
 }

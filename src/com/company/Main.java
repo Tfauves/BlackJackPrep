@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Deck playingCards = new Deck();
-        playingCards.deal(playingCards.getCards());
+        playingCards.deal();
     }
 
 }
